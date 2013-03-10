@@ -1,6 +1,6 @@
 set(CMAKE_SYSTEM_NAME BlueGeneQ-static)
 
-set(COMPILER_SEARCH_PATHS /bgsys/drivers/ppcfloor/comm/xl/bin /soft/compilers/ibmcmp-nov2012/xlf/bg/14.1/bin /soft/compilers/ibmcmp-nov2012/vac/bg/12.1/bin)
+set(COMPILER_SEARCH_PATHS /bgsys/drivers/ppcfloor/comm/xl/bin /soft/compilers/ibmcmp-feb2013/xlf/bg/14.1/bin /soft/compilers/ibmcmp-feb2013/vac/bg/12.1/bin /soft/compilers/ibmcmp-feb2013/vacpp/bg/12.1/bin)
 
 #find_program(CMAKE_C_COMPILER       mpicc    ${COMPILER_SEARCH_PATHS} )
 #find_program(CMAKE_CXX_COMPILER     mpicxx    ${COMPILER_SEARCH_PATHS} )
@@ -14,9 +14,9 @@ SET_PROPERTY(GLOBAL PROPERTY TARGET_ARCHIVES_MAY_BE_SHARED_LIBS FALSE)
 
 # Make sure MPI_COMPILER wrapper matches the gnu compilers.  
 # Prefer local machine wrappers to driver wrappers here too.
-find_program(MPI_C_COMPILER NAMES mpicc PATHS /bgsys/drivers/ppcfloor/comm/xl/bin/)
-find_program(MPI_CXX_COMPILER NAMES mpicxx PATHS /bgsys/drivers/ppcfloor/comm/xl/bin/)
-find_program(MPI_Fortran_COMPILER NAMES mpif90 mpif77 PATHS /bgsys/drivers/ppcfloor/comm/xl/bin/)
+#find_program(MPI_C_COMPILER NAMES mpicc PATHS /bgsys/drivers/ppcfloor/comm/xl/bin/)
+#find_program(MPI_CXX_COMPILER NAMES mpicxx PATHS /bgsys/drivers/ppcfloor/comm/xl/bin/)
+#find_program(MPI_Fortran_COMPILER NAMES mpif90 mpif77 PATHS /bgsys/drivers/ppcfloor/comm/xl/bin/)
 
 #set(CMAKE_FIND_ROOT_PATH
 #	/bgsys/drivers/ppcfloor
