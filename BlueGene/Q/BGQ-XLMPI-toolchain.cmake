@@ -1,6 +1,6 @@
 set(CMAKE_SYSTEM_NAME BlueGeneQ-static)
 
-set(COMPILER_SEARCH_PATHS /bgsys/drivers/ppcfloor/comm/xl/bin /soft/compilers/ibmcmp-feb2013/xlf/bg/14.1/bin /soft/compilers/ibmcmp-feb2013/vac/bg/12.1/bin /soft/compilers/ibmcmp-feb2013/vacpp/bg/12.1/bin)
+set(COMPILER_SEARCH_PATHS /bgsys/drivers/ppcfloor/comm/xl/bin /soft/compilers/ibmcmp-may2013/xlf/bg/14.1/bin /soft/compilers/ibmcmp-may2013/vac/bg/12.1/bin /soft/compilers/ibmcmp-may2013/vacpp/bg/12.1/bin)
 
 #find_program(CMAKE_C_COMPILER       mpicc    ${COMPILER_SEARCH_PATHS} )
 #find_program(CMAKE_CXX_COMPILER     mpicxx    ${COMPILER_SEARCH_PATHS} )
